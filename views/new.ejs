@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini_whatsapp</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Write new chat...</h3>
+     <div class="form-main" style="background-color: rgb(255, 255, 255); display: flex; justify-content: center;align-items: center; padding: 10px 5px 10px; width:auto">
+    <form action="/chats" method="POST">
+       
+            <input placeholder="who are you" type="text" name="from">
+            <br><br>
+        <textarea name="msg" id="">write your message here..</textarea><br><br>
+
+        <input placeholder="add reciver" type="text" name="to">
+        <br><br>
+        <div class="btn">
+        <button>create msg</button>   
+     
+        </div>
+        </form>
+        </div>
+        
+    
+</body>
+</html>
