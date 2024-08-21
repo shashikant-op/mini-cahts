@@ -1,5 +1,5 @@
 .chat{
-    background-color: rgb(99, 234, 234);
+    background-color: teal;
     margin: 40px 20px 40px ;
     padding: 10px 5px 10px;
     width: 400px;
@@ -10,6 +10,7 @@
     flex-direction: column;
     border-radius: 10px;
    padding-right: 15px;
+   color: white;
 }
 .main{
     display: flex;
@@ -19,7 +20,7 @@
 }
 .msg{
     background-color: rgba(255, 255, 255, 0.84);
-    color: rgb(26, 124, 124);
+    color:black;
     border-radius: 5px;
 }
 .form-main{
@@ -27,3 +28,5 @@
     flex-direction: column;
     background-color: aqua;
 }
+
+

@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mini_whatsapp</title>
+    <link rel="stylesheet" href="/style1.css">
 </head>
 <body>
 
-    <h3>edit chat...</h3>
-    <p>Edit your chat :<%=chats.id%></p>
-    <p>this chat was sent from <%=chats.from%>to<%=chats.to%></p>
-    <form  method="post" action="/chats/<%=chats._id%>?_method=PUT">
-        <textarea name="msg" rows="5"  cols="10"><%=chats.msg%></textarea>
-        <button>Edit</button>
-    </form>
+
+
+    <div class="chat">
+        <h3>Edit chat...</h3>
+        <h3>Edit chat id: <%= chats.id %></h3>
+        <div class="msg">
+            <form method="post" action="/chats/<%= chats._id %>?_method=PUT">
+                <textarea name="msg" rows="5" cols="10"><%= chats.msg %></textarea>
+                <button type="submit">Edit</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
